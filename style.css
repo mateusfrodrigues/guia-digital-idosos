@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #243247;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+header{
+    background-color: #145a8d;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.boas-vindas {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border-left: 6px solid #145a8d;
+}
+
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.cartao {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.icone {
+    font-size: 42px;
+}
+
+.cartao h3 {
+    font-size: 23px;
+}
+
+button {
+    background-color: #145a8d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d4168;
+}
+
+button:focus-visible {
+    outline: 3px solid #f0a500;
+    outline-offset: 3px;
+}
+
+footer {
+    background-color: #243247;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .boas-vindas
+    .cartao {
+        padding: 20px;
+    }
+}
+
+.area-orientacoes {
+    background-color: white;
+    border: 2px solid #145a8d;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.area-orientacoes h2 {
+    color: #145a8d;
+    font-size: 28px;
+}
+
+.area-orientacoes li {
+    margin-bottom: 12px;
+}
+
+.area-orientacoes button {
+    margin-top: 15px;
+}
+
+.area-orientacoes[hidden] {
+    display: none;
+}
+
+/* Melhorias de acessibilidade */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-wrap: break-word;
+}
+
+p,
+li {
+    line-height: 1.8;
+}
+
+button {
+    min-height: 48px;
+    max-width: 100%;
+    line-height: 1.5;
+    white-space: normal;
+}
+
+/* Destaque para quem navega com o teclado */
+
+button:focus-visible {
+    outline: 3px solid #f0a500;
+    outline-offset: 4px;
+}
+
+/* Evita que o conteúdo ultrapasse a tela */
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.cartao,
+.boas-vindas,
+.area-orientacoes {
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+/* Ajustes para celulares */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 24px 16px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .cartoes {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .cartao,
+    .boas-vindas,
+    .area-orientacoes {
+        padding: 18px;
+    }
+
+    .cartao h3 {
+        font-size: 22px;
+    }
+
+    .area-orientacoes h2 {
+        font-size: 25px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px 16px;
+    }
+}
+
+/* Respeita a preferência por menos movimento */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
