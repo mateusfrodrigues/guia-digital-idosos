@@ -33,7 +33,7 @@ JavaScript (ES6+): Interatividade dinâmica nos módulos práticos do guia.
 Git & GitHub: Versionamento, controle de configuração e hospedagem do código.
 🚀 Como Executar o Projeto
 Clone este repositório para o seu ambiente local:
-git clone https://github.com/SEU-USUARIO/guia-inclusao-digital-idosos.git
+git clone https://github.com/mateusfrodrigues/guia-inclusao-digital-idosos.git
 
 
 Navegue até o diretório do projeto:
