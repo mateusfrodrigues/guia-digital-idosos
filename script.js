@@ -8,7 +8,7 @@ const botaoFechar = document.getElementById("fechar-orientacoes");
 const orientacoes = {
     celular: {
         titulo: "Como usar melhor o celular",
-0        passos: [
+        passos: [
             "Para aumentar as letras, abra as Configurações do celular e procure por Tela ou Tamanho da fonte.",
             "Para ajustar o volume, use os botões laterais do aparelho. Os nomes e as opções podem variar conforme o modelo.",
             "Para aumentar o brilho, abra o painel de configurações rápidas e ajuste a barra de brilho.",
